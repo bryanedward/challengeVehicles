@@ -55,7 +55,7 @@ export const Login = () => {
           onChange={addInput}
           required
         />
-        <Button onClick={auth}>Logearse</Button>
+        <Button onClick={auth}>Acceder</Button>
       </Form>
     </ContainerLogin>
   );
