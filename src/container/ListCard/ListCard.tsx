@@ -22,7 +22,6 @@ export const ListCard = () => {
         let cantPagination = Math.ceil(count / 30);
         setPagination(cantPagination);
         setData(data);
-        authState.vehicles.push(data);
       });
   }, [authState]);
 

@@ -85,11 +85,6 @@ export const Card = ({
       typevehicle: type,
       capacity: capacity,
     });
-    const data = { id, model, plate, type, capacity };
-    ditpach({
-      type: "UPDATEVEHICLES",
-      vehcicles: data,
-    });
   };
 
   return (
@@ -98,7 +93,7 @@ export const Card = ({
         <CardFront>
           <ContainerPrincipal>
             <HeaderCard>
-              <p>Conductor responsable {String(id)}</p>
+              <p>Conductor responsable</p>
               <small>{driver.first_name}</small>
             </HeaderCard>
             <MainCard>

@@ -8,7 +8,6 @@ const initialState = {
   iduser: 0,
   modal: false,
   selectItem: {},
-  vehicles: [],
 };
 
 export const AuthProvider = ({ children }: any) => {

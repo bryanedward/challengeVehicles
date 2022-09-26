@@ -58,7 +58,6 @@ export const CardFront = styled.div`
   background: #c1a8da;
   backface-visibility: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
   border-radius: 1rem;
 `;
 

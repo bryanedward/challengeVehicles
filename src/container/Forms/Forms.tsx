@@ -28,7 +28,7 @@ export const Forms = ({ setIsOpen }: any) => {
     if (authState.selectItem.id > 0) {
       setValue(authState.selectItem);
     } else {
-      setValue({ plate: "", model: "", typevehicle: "", capacity: "" });
+      setValue(newVehicle);
     }
   }, [authState]);
   const { plate, model, typevehicle, capacity } = value;
@@ -117,7 +117,7 @@ export const Forms = ({ setIsOpen }: any) => {
           <MenuItem></MenuItem>
           <MenuItem value="van">van</MenuItem>
           <MenuItem value="car">car</MenuItem>
-          <MenuItem value="busmotorcycle">busmotorcycle</MenuItem>
+          <MenuItem value="bicycle">bicycle</MenuItem>
           <MenuItem value="motorcycle">motorcycle</MenuItem>
           <MenuItem value="truck">truck</MenuItem>
         </Select>
