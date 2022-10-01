@@ -21,7 +21,7 @@ export function saveVehicle({
   message,
 }: PropsVehicle) {
   axios
-    .post(` ${process.env.REACT_APP_VERCEL_URLBACKEND}/${url}`, {
+    .post(` ${process.env.REACT_APP_VERCEL_CONNECT}/${url}`, {
       driver_id: iduser,
       plate,
       model,

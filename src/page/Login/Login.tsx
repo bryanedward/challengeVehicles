@@ -18,7 +18,7 @@ export const Login = () => {
     if (validator.isEmail(email)) {
       try {
         axios
-          .post(`${process.env.REACT_APP_VERCEL_URLBACKEND}/driver`, {
+          .post(`${process.env.REACT_APP_VERCEL_CONNECT}/driver`, {
             email,
           })
           .then(function ({ status, data }) {
@@ -47,8 +47,6 @@ export const Login = () => {
     <ContainerLogin>
       <BsPersonFill size="40" />
       <h3>Welcome user !</h3>
-      {process.env.REACT_APP_VERCEL_ENV}
-      {process.env.REACT_APP_VERCEL_CONNECT}
       <Form>
         <Input
           placeholder="add email"

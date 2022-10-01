@@ -65,7 +65,7 @@ export const Card = ({
         Swal.fire("Eliminado!", " vehiculo eliminado.", "success");
         deleteData(id);
         axios.delete(
-          `${process.env.REACT_APP_VERCEL_URLBACKEND}/vehicle?id=${id}`
+          `${process.env.REACT_APP_VERCEL_CONNECT}/vehicle?id=${id}`
         );
       }
     });
