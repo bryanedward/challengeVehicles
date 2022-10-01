@@ -47,6 +47,7 @@ export const Login = () => {
     <ContainerLogin>
       <BsPersonFill size="40" />
       <h3>Welcome user !</h3>
+      {process.env.REACT_APP_VERCEL_ENV}
       <Form>
         <Input
           placeholder="add email"
