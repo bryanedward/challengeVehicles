@@ -2,6 +2,7 @@
   "name": "challenge",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://bryanedward.github.io/challengeVehicles",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -31,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -55,6 +58,7 @@
     "@types/react-lazy-load-image-component": "^1.5.2",
     "@types/react-modal": "^3.13.1",
     "@types/styled-components": "^5.1.26",
-    "@types/validator": "^13.7.6"
+    "@types/validator": "^13.7.6",
+    "gh-pages": "^4.0.0"
   }
 }

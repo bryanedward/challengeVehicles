@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../page/Home";
 import { Login } from "../page/Login/Login";
 import { RouterPrivate } from "./RouterPrivate";
 
 export const RouterGeneral = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route
@@ -17,6 +17,6 @@ export const RouterGeneral = () => {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
