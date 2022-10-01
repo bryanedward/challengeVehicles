@@ -18,7 +18,7 @@ export const Login = () => {
     if (validator.isEmail(email)) {
       try {
         axios
-          .post(`${process.env.REACT_APP_VERCEL_URL}/driver`, {
+          .post(`${process.env.REACT_APP_VERCEL_URLBACKEND}/driver`, {
             email,
           })
           .then(function ({ status, data }) {

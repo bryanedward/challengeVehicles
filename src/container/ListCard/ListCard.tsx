@@ -16,7 +16,7 @@ export const ListCard = () => {
   const { authState, ditpach } = React.useContext(AuthContext);
 
   React.useEffect(() => {
-    fetch(`${process.env.REACT_APP_VERCEL_URL}/vehicle`)
+    fetch(`${process.env.REACT_APP_VERCEL_URLBACKEND}/vehicle`)
       .then((response) => response.json())
       .then(({ data, count }) => {
         let cantPagination = Math.ceil(count / 30);
@@ -51,7 +51,7 @@ export const ListCard = () => {
     page: number
   ): void => {
     axios
-      .get(`${process.env.REACT_APP_VERCEL_URL}/vehicle?id=${page}`)
+      .get(`${process.env.REACT_APP_VERCEL_URLBACKEND}/vehicle?id=${page}`)
       .then(function ({ data }) {
         setData(data.data);
       });
